@@ -84,3 +84,6 @@ default:
     endfunction
 
 Have fun!
+
+[Vundle]: https://github.com/gmarik/vundle/
+[pathgen]: https://github.com/tpope/vim-pathogen
