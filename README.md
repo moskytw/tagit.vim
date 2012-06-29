@@ -53,23 +53,23 @@ Use `let <key> = <value>` in your vimrc.
 
 The tags command you want to use.
 
-default: 'ctags --python-kinds=-i %r -a -o %t %f'
+default: `'ctags --python-kinds=-i %r -a -o %t %f'`
 
-* %r: the recurse flag
-* %t: the path of tags file
-* %f: the path of target file
+* `%r`: the recurse flag
+* `%t`: the path of tags file
+* `%f`: the path of target file
 
 ## g:tagit_tags_command_recurse
 
 The recurse option for tags command.
 
-default: '-R'
+default: `'-R'`
 
 ## g:tagit_tags_filename
 
 The name of tags file. Tags file will be save in the root of project.
 
-default: 'tags'
+default: `'tags'`
 
 ## g:TagitFindVCSRoot
 
