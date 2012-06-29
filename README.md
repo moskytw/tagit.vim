@@ -49,7 +49,7 @@ Here is a list of settings you can customize in Tagit.
 
 Use `let <key> = <value>` in your vimrc.
 
-## g:tagit_tags_command
+### g:tagit_tags_command
 
 The tags command you want to use.
 
@@ -59,19 +59,19 @@ default: `'ctags --python-kinds=-i %r -a -o %t %f'`
 * `%t`: the path of tags file
 * `%f`: the path of target file
 
-## g:tagit_tags_command_recurse
+### g:tagit_tags_command_recurse
 
 The recurse option for tags command.
 
 default: `'-R'`
 
-## g:tagit_tags_filename
+### g:tagit_tags_filename
 
 The name of tags file. Tags file will be save in the root of project.
 
 default: `'tags'`
 
-## g:TagitFindVCSRoot
+### g:TagitFindVCSRoot
 
 Define how to find the root of your project.
 
