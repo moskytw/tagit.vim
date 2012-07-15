@@ -33,7 +33,7 @@ if !exists('g:tagit_tags_filename')
 endif
 
 if !exists('g:TagitFindVCSRoot')
-    function g:TagitFindVCSRoot(filepath)
+    function! g:TagitFindVCSRoot(filepath)
         " return the root path of filepath
         " (re)define it to set your root of project
         return system('cd `dirname '.a:filepath.'` && git rev-parse --show-toplevel 2> /dev/null')[:-2]
@@ -45,7 +45,7 @@ endif
 
 " main functions
 
-function TagitInit()
+function! TagitInit()
     " it will be call in the end of this script
     let rootpath = g:TagitFindVCSRoot(expand('%:p'))
     if !empty(rootpath)
@@ -62,15 +62,15 @@ function TagitInit()
     endif
 endfunction
 
-function Tagit()
+function! Tagit()
     call InnerTagit(0)
 endfunction
 
-function TagitAll()
+function! TagitAll()
     call InnerTagit(1)
 endfunction
 
-function InnerTagit(all)
+function! InnerTagit(all)
     " all == 0: update the tags of this file
     " all != 0: update the tags of all the files under the root path
     let filepath = expand('%:p')
