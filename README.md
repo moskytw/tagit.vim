@@ -27,7 +27,7 @@ Installation
 
 Add the command in your `.vimrc`:
 
-    Bundle "moskied/tagit.vim"
+    Bundle "moskytw/tagit.vim"
 
 Then, use [Vundle][] to install:
 
@@ -38,7 +38,7 @@ Then, use [Vundle][] to install:
 
 If you are using the [Vundle][] or [pathgen][]:
 
-    $ git clone https://github.com/moskied/tagit.vim ~/.vim/bundle/tagit.vim
+    $ git clone https://github.com/moskytw/tagit.vim ~/.vim/bundle/tagit.vim
 
 If you don't have any plugin manager, just download it and copy the files under `tagit.vim` to your `~/.vim` folder.        
 
